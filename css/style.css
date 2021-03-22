@@ -1,7 +1,24 @@
 html {
     font-family: 'Archivo', sans-serif;
+    position: relative;
+    color: #150F40;
 }
 
 h1, h2 {
     font-family: 'Julius Sans One', sans-serif;
+}
+
+h1 {
+    text-indent: -9999px;
+    position: absolute;
+}
+
+li, li a {
+    list-style-type: none;
+    text-decoration-line: none;
+    color: #150F40;
+}
+
+figure {
+    width: auto;
 }

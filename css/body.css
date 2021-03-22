@@ -1,0 +1,40 @@
+@media(min-width: 1280px) {
+    body{
+        padding: 24px 140px;
+        margin: 0;
+    }
+
+    figure#mockup_decouvrir img {
+        width: 32.2%;
+    }
+
+    figure#mockup_profil img {
+        width: 33.3%;
+    }
+
+    figure#mockup_profil_autre img {
+        width: 27.2%;
+    }
+
+    figure#mockup_decouvrir_autre img {
+        width: 22.9%;
+    }
+
+    figure#mockup_recompenses {
+        width: 36.1%;
+    }
+}
+
+@media(min-width: 800px) {
+    body {
+        padding: 36px;
+        margin: 0;
+    }
+}
+
+@media(max-width: 800px) {
+    body {
+        padding: 41px 36px;
+        margin: 0;
+    }
+}
