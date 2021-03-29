@@ -1,15 +1,8 @@
-html {
-    height: 100vh;
-}
-
-body {
-    height: 100%;
-}
-
 main img {
     height: 70%;
     position: absolute;
-    bottom: -50px;
+    bottom: -100px;
+    left: -50px;
 }
 
 main {
@@ -20,18 +13,21 @@ main {
 }
 
 div.content {
-    right: 0;
-    bottom: 50px;
     width: 70%;
-    position: absolute;
     display: flex;
     flex-direction: column;
+    margin-left: 350px;
+    text-align: center;
 }
 
 main button {
     width: 40%;
     margin: 0 auto;
     font-family: "Julius Sans One", sans-serif;
+}
+
+.content a:first-of-type {
+  height: 50px;
 }
 
 main button#acceder {
@@ -49,4 +45,12 @@ main button#creer {
     justify-content: center;
     height: 35px;
     text-decoration: none;
+}
+
+.content * {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 75px;
 }
