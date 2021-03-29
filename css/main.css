@@ -13,6 +13,7 @@ section#\31_section {
     display: flex;
     flex-direction: column;
     height: 550px;
+    margin-bottom: 50px;
 }
 
 section#\31_section h2 {
@@ -55,7 +56,7 @@ h3 {
 }
 
 section {
-    margin-bottom: 50px;
+    margin-bottom: 10%;
 }
 
 section#\32_section {
@@ -96,4 +97,20 @@ section#\36_section .txt figure img {
 section .txt .p {
     width: 50%;
     margin-right: 50px;
+}
+
+img#vagues_1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 1550px;
+}
+
+img#vagues_2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 3800px;
 }
