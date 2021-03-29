@@ -1,0 +1,57 @@
+@media(min-width: 800px) {
+    header {
+        display: flex;
+        height: 160px;
+        align-content: center;
+    }
+
+    nav ul li.a_propos button, nav ul li.s_inscrire button {
+        background-color: #B8B0D9;
+    }
+
+    nav ul li.ouvrir button {
+        background-color: #4F4573;
+    }
+
+    li.a_propos {
+        background-color: #B8B0D9;
+        border-radius: 30px;
+    }
+
+    li.s_inscrire {
+        background-color: #B8B0D9;
+        border-radius: 30px;
+        margin: 0 8px;
+    }
+
+    li.ouvrir {
+        background-color: #4F4573;
+        border-radius: 30px;
+    }
+
+    li.a_propos, li.s_inscrire, li.ouvrir {
+        width: 25%;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        width: 80%;
+    }
+
+    header a:first-of-type {
+        display: flex;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+}

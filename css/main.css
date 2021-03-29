@@ -1,0 +1,99 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+div.\31_2_3 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+section#\31_section {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+}
+
+section#\31_section h2 {
+    margin: 50px auto 0 auto;
+}
+
+div.likez, div.retrouvez, div.decouvrez {
+    width: 33.3%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt_1, .txt_2, .txt_3 {
+    position: absolute;
+    width: 72.5%;
+    display: flex;
+    flex-direction: column;
+    top: 150px;
+}
+
+h2 {
+    font-size: 65px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: "Archivo Narrow SemiBold", sans-serif;
+    font-style: oblique;
+    color: #7668A6;
+    width: 300px;
+}
+
+.txt_1 p, .txt_2 p, .txt_3 p {
+    opacity: 0.7;
+    font-size: 18px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section#\32_section {
+    height: 800px;
+}
+
+section .txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section .txt figure {
+    width: 35%;
+}
+
+section#\32_section .txt figure img {
+    width: 100%;
+}
+
+section#\33_section .txt figure img {
+    width: 100%;
+}
+
+section#\34_section .txt figure img {
+    width: 80%;
+}
+
+section#\35_section .txt figure img {
+    width: 70%;
+}
+
+section#\36_section .txt figure img {
+    width: 75%;
+}
+
+section .txt .p {
+    width: 50%;
+    margin-right: 50px;
+}

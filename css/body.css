@@ -1,7 +1,11 @@
-@media(min-width: 1280px) {
+@media(max-width: 1920px) { /*S'applique aux PC (plus de 1280px de largeur d'écran)*/
     body{
-        padding: 24px 140px;
+        padding: 0 140px;
         margin: 0;
+        background: linear-gradient(#B8B0D9, #E9E9E9, #FFFFFF);
+        background-position-y: 160px;
+        background-repeat: no-repeat;
+        background-size: 100% 1000px;
     }
 
     figure#mockup_decouvrir img {
@@ -20,21 +24,65 @@
         width: 22.9%;
     }
 
-    figure#mockup_recompenses {
+    figure#mockup_recompenses img {
         width: 36.1%;
     }
+
 }
 
-@media(min-width: 800px) {
+@media(max-width: 1280px) { /*S'applique aux tablettes (entre 800 et 1280px de largeur d'écran)*/
     body {
-        padding: 36px;
+        padding: 0 36px;
         margin: 0;
+        background-image: url("../img/fond_tablette.svg");
+        background-position-y: 157px;
+    }
+
+    figure#mockup_decouvrir img {
+        width: 35.6%;
+    }
+
+    figure#mockup_profil img {
+        width: 34.2%;
+    }
+
+    figure#mockup_profil_autre img {
+        width: 26.1%;
+    }
+
+    figure#mockup_decouvrir_autre img {
+        width: 32.4%;
+    }
+
+    figure#mockup_recompenses img {
+        width: 43.3%;
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 800px) { /*S'applique aux mobiles (moins de 800px de largeur d'écran)*/
     body {
         padding: 41px 36px;
         margin: 0;
+        background-image: url("../img/fond_telephone.svg");
+    }
+
+    figure#mockup_decouvrir img {
+        width: 62.7%;
+    }
+
+    figure#mockup_profil img {
+        width: 75.2%;
+    }
+
+    figure#mockup_profil_autre img {
+        width: 46.7%;
+    }
+
+    figure#mockup_decouvrir_autre img {
+        width: 59.2%;
+    }
+
+    figure#mockup_recompenses img {
+        width: 58.7%;
     }
 }
