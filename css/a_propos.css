@@ -1,0 +1,52 @@
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+}
+
+main img {
+    height: 70%;
+    position: absolute;
+    bottom: -50px;
+}
+
+main {
+    height: 55%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+div.content {
+    right: 0;
+    bottom: 50px;
+    width: 70%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+main button {
+    width: 40%;
+    margin: 0 auto;
+    font-family: "Julius Sans One", sans-serif;
+}
+
+main button#acceder {
+    background-color: #4F4573;
+    color: white;
+}
+
+main button#creer {
+    background-color: #B8B0D9;
+}
+
+.content a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    text-decoration: none;
+}
