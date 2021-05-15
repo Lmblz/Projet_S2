@@ -3,20 +3,20 @@ main {
     flex-direction: column;
 }
 
-div.\31_2_3 {
+div.top {
     display: flex;
     flex-direction: row;
     text-align: center;
 }
 
-section#\31_section {
+section#section_1 {
     display: flex;
     flex-direction: column;
     height: 550px;
     margin-bottom: 50px;
 }
 
-section#\31_section h2 {
+section#section_1 h2 {
     margin: 50px auto 0 auto;
 }
 
