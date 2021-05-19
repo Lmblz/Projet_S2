@@ -10,8 +10,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/connection.css">
+    <link rel="stylesheet" href="css/style_app.css">
 </head>
 <body>
-
+<header>
+    <img src="img/logo_blanc.png" alt="Logo Save Hit blanc">
+</header>
+<div class="connection">
+    <div class="email">
+        <label for="email"> <img src="img/email.png" alt="email"></label>
+        <input type="text" name="email" id="email" required placeholder="Adresse e-mail">
+    </div>
+    <div class="password">
+        <label for="password"> <img src="img/padlock.png" alt="padlock"> </label>
+        <input type="password" name="password" id="password" required placeholder="Mot de passe">
+    </div>
+    <div class="send">
+        <input type="submit" value="Se connecter">
+    </div>
+</div>
 </body>
 </html>

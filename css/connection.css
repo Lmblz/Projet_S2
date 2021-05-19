@@ -1,0 +1,41 @@
+img {
+    margin-top: 50px;
+}
+
+input {
+    width: 110%;
+    background-color: #7668A6;
+    border: none;
+    opacity: 60%;
+}
+
+.connection {
+    display: flex;
+    flex-direction: column;
+}
+
+div.email, div.password, div.repeat_password, div.username, div.prenom, div.nom, div.date {
+    display: flex;
+}
+
+div.email input, div.password input, div.repeat_password input, div.username input, div.prenom input, div.nom input, div.date input {
+    height: 20px;
+    margin-top: 50px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.send input {
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #7668A6;
+    opacity: 60%;
+    color: white;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 30px;
+    border: none;
+}
+
+.connection {
+    margin-top: 15%;
+}

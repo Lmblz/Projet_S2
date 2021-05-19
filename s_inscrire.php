@@ -17,14 +17,14 @@
 <body>
     <header>
         <h1>Save'Hit</h1>
-        <a href="index.html">
-            <img src="img/logo%20noir.svg" alt="Logo Save'Hit">
+        <a href="index.php">
+            <img src="img/logo noir.svg" alt="Logo Save'Hit">
         </a>
         <nav>
             <ul>
                 <li class="a_propos"><a href="a_propos.html"><button>A propos</button></a></li>
-                <li class="s_inscrire"><a href="s_inscrire.html"><button>S'inscrire</button></a></li>
-                <li class="ouvrir"><a href="ouvrir.html"><button>Ouvrir Save'Hit</button></a></li>
+                <li class="s_inscrire"><a href="s_inscrire.php"><button>S'inscrire</button></a></li>
+                <li class="ouvrir"><a href="ouvrir.php"><button>Ouvrir Save'Hit</button></a></li>
             </ul>
         </nav>
     </header>

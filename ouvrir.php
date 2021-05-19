@@ -17,14 +17,14 @@
 <body>
 <header>
     <h1>Save'Hit</h1>
-    <a href="index.html">
-        <img src="img/logo%20noir.svg" alt="Logo Save'Hit">
+    <a href="index.php">
+        <img src="img/logo noir.svg" alt="Logo Save'Hit">
     </a>
     <nav>
         <ul>
             <li class="a_propos"><a href="a_propos.html"><button>A propos</button></a></li>
-            <li class="s_inscrire"><a href="s_inscrire.html"><button>S'inscrire</button></a></li>
-            <li class="ouvrir"><a href="index.html"><button>Le projet Save'Hit</button></a></li>
+            <li class="s_inscrire"><a href="s_inscrire.php"><button>S'inscrire</button></a></li>
+            <li class="ouvrir"><a href="index.php"><button>Le projet Save'Hit</button></a></li>
         </ul>
     </nav>
 </header>
@@ -32,10 +32,10 @@
     <img src="img/mock_up_decouvrir_a_propos.svg" alt="Mockup de la fenêtre Découvrir de la page à propos">
     <h2>Une application mobile conçue pour les fans de musiques </h2>
     <div class="content">
-        <a href="ouvrir.html"><button id="acceder">Accéder à l'app</button></a>
+        <a href="ouvrir.php"><button id="acceder">Accéder à l'app</button></a>
         <p>Save'Hit est une web application gratuite, disponible sur mobile. Une fois lancée, créez votre compte et entrez dans l'univers de la musique !</p>
         <p>Vous pouvez également créer un compte en cliquant ici :</p>
-        <a href="s_inscrire.html"><button id="creer">Créer son compte</button></a>
+        <a href="s_inscrire.php"><button id="creer">Créer son compte</button></a>
     </div>
 </main>
 <footer>

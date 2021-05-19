@@ -10,10 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/style_app.css">
 </head>
 <body>
-    <img src="img/logo_blanc.png" alt="Logo Save Hit blanc">
+    <header>
+        <img src="img/logo_blanc.png" alt="Logo Save Hit blanc">
+    </header>
     <button class="connection">Démarrer</button>
-    <span>Déjà un compte ? <a href="#">Se connecter</a></span>
+    <span>Déjà un compte ? <a href="connection.php">Se connecter</a></span>
+
 </body>
 </html>
