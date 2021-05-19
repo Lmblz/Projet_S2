@@ -2,21 +2,21 @@
 
 session_start();
 
-$bdd = new PDO('mysql:host=127.0.0.1;dbname=espace_membre', 'root', 'root');
+$bdd = new PDO('mysql:host=127.0.0.1;dbname=projet_s2', 'root', 'root');
 
 if(isset($_POST['formconnexion'])) {
     $mailconnect = htmlspecialchars($_POST['mailconnect']);
     $mdpconnect = sha1($_POST['mdpconnect']);
     if(!empty($mailconnect) AND !empty($mdpconnect)) {
-        $requser = $bdd->prepare("SELECT * FROM membres WHERE mail = ? AND motdepasse = ?");
+        $requser = $bdd->prepare("SELECT * FROM users WHERE e_mail_users = ? AND password_users = ?");
         $requser->execute(array($mailconnect, $mdpconnect));
         $userexist = $requser->rowCount();
         if($userexist == 1) {
             $userinfo = $requser->fetch();
-            $_SESSION['id'] = $userinfo['id'];
-            $_SESSION['pseudo'] = $userinfo['pseudo'];
-            $_SESSION['mail'] = $userinfo['mail'];
-            header("Location: profil.php?id=".$_SESSION['id']);
+            $_SESSION['id_account_users'] = $userinfo['id_account_users'];
+            $_SESSION['username_users'] = $userinfo['username_users'];
+            $_SESSION['e_mail_users'] = $userinfo['e_mail_users'];
+            header("Location: profil.php?id=".$_SESSION['id_account_users']);
         } else {
             $erreur = "Mauvais mail ou mot de passe !";
         }
@@ -30,7 +30,7 @@ if(isset($_POST['formconnexion'])) {
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Inscription | Save'Hit</title>
+    <title>Connection | Save'Hit</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -39,8 +39,35 @@ if(isset($_POST['formconnexion'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style_app.css">
     <style>
+        table tr>td:first-of-type img {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        input {
+            opacity: 50%;
+            border-radius: 10px;
+            padding: 2px 2px 2px 5px;
+            font-family: "Julius Sans One", sans-serif;
+            width: 120%;
+            background-color: #7668A6;
+            color: #FFFFFF;
+        }
+        input::placeholder {
+            color: #FFFFFF;
+        }
+        table tr {
+            margin-bottom: 5px;
+        }
+        .connexion {
+            display: flex;
+            align-items: center;
+            height: 70%;
+        }
         header img {
             margin-top: 50px;
+        }
+        .erreur {
+            color: red;
         }
     </style>
 </head>
@@ -48,21 +75,38 @@ if(isset($_POST['formconnexion'])) {
 <header>
     <img src="img/logo_blanc.png" alt="Logo Save Hit blanc">
 </header>
-<div align="center">
-    <h2>Connexion</h2>
+<div class="connexion">
     <br /><br />
     <form method="POST" action="">
-        <table
-        <input type="email" name="mailconnect" placeholder="Mail" />
-        <input type="password" name="mdpconnect" placeholder="Mot de passe" />
+        <table>
+            <tr>
+                <td align="right">
+                    <label for="mail"><img src="img/email.png"></label>
+                </td>
+                <td>
+                    <input type="email" name="mailconnect" placeholder="Mail" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label for="password"><img src="img/padlock.png"></label>
+                </td>
+                <td>
+                    <input type="password" name="mdpconnect" placeholder="Mot de passe" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="erreur"><?php
+                    if(isset($erreur)) {
+                        echo '<font-color ="red">'.$erreur.'</font>';
+                    }
+                    ?></td>
+            </tr>
+        </table>
         <br /><br />
-        <input type="submit" name="formconnexion" value="Se connecter !" />
+        <input type="submit" name="formconnexion" value="Se connecter" />
     </form>
-    <?php
-    if(isset($erreur)) {
-        echo '<font color="red">'.$erreur."</font>";
-    }
-    ?>
 </div>
 </body>
 </html>

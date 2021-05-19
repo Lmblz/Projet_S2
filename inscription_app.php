@@ -173,7 +173,7 @@ if(isset($_POST['forminscription'])) {
                 <td>
                 <td align="center">
                     <br>
-                    <input type="submit" name="forminscription" value="Je m'inscris" />
+                    <input type="submit" name="forminscription" value="S'inscrire" />
                 </td>
             </tr>
             <tr>
