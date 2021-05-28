@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=projet_s2', 'root', 'root');
@@ -16,7 +15,7 @@ if(isset($_POST['formconnexion'])) {
             $_SESSION['id_account_users'] = $userinfo['id_account_users'];
             $_SESSION['username_users'] = $userinfo['username_users'];
             $_SESSION['e_mail_users'] = $userinfo['e_mail_users'];
-            header("Location: profil.php?id=".$_SESSION['id_account_users']);
+            header("Location: profil_app.php?id=".$_SESSION['id_account_users']);
         } else {
             $erreur = "Mauvais mail ou mot de passe !";
         }
@@ -103,9 +102,19 @@ if(isset($_POST['formconnexion'])) {
                     }
                     ?></td>
             </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="formconnexion" value="Se connecter" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    Pas encore membre ? <a href="inscription_app.php">S'inscrire</a>
+                </td>
+            </tr>
         </table>
-        <br /><br />
-        <input type="submit" name="formconnexion" value="Se connecter" />
     </form>
 </div>
 </body>
