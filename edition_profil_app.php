@@ -2,7 +2,7 @@
 
 session_start();
 
-$bdd = new PDO('mysql:host=127.0.0.1;dbname=projet_s2', 'root', 'root');
+include_once "configpdo.php";
 
 if (isset($_SESSION['id_account_users']) AND $_SESSION['id_account_users'] > 0) {
     $getid = intval($_SESSION['id_account_users']);
