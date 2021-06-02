@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+
 include_once "configpdo.php";
 
 if(isset($_POST['forminscription'])) {
@@ -12,7 +14,7 @@ if(isset($_POST['forminscription'])) {
     $lastname = htmlspecialchars($_POST['lastname']);
     $date_of_birth = htmlspecialchars($_POST['date_of_birth']);
 
-    if(!empty($_POST[pseudo]) AND !empty($_POST[mail]) AND !empty($_POST[mail2]) AND !empty($_POST[password]) AND !empty($_POST[password2]) AND !empty($_POST[firstname]) AND !empty($_POST[lastname]) AND !empty($_POST[date_of_birth])) {
+    if(!empty($_POST['pseudo']) AND !empty($_POST['mail']) AND !empty($_POST['mail2']) AND !empty($_POST['password']) AND !empty($_POST['password2']) AND !empty($_POST['firstname']) AND !empty($_POST['lastname']) AND !empty($_POST['date_of_birth'])) {
 
         $pseudolength = strlen($pseudo);
         if ($pseudolength <= 255) {

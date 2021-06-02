@@ -17,6 +17,7 @@
         }
         header {
             display: flex;
+            justify-content: center;
         }
         header h2, h3 {
             margin-top: 70px;
@@ -35,7 +36,7 @@
             background-color: #000000;
             width: 100%;
             display: flex;
-            position: absolute;
+            position: sticky;
             bottom: 0;
             padding: 3px 0;
             color: #B8B0D9;
@@ -62,9 +63,39 @@
             text-decoration: none;
             color: #B8B0D9;
         }
+        li {
+            list-style: none;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-color: #7668A6;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        h4 {
+            border-top: solid white 1px;
+            padding-top: 10px;
+        }
+        body section section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        body {
+            text-align: center;
+        }
     </style>
 </head>
-<body>
     <header>
         <img src="img/logo_blanc_sanstxt.png" alt="Logo Blanc Save Hit">
         <h2>Découvrir</h2>
@@ -72,6 +103,148 @@
     <h3>Venez découvrir les titres qui vons plairons et passerons l'ensemble de vos journées à vos côtés</h3>
     <section class="rock">
         <h4>Rock</h4>
+        <ul>
+            <li>
+               The Beattles
+            </li>
+        </ul>
+        <ul>
+            <li>
+                The Rolling Stones
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Linkin Park
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Pink Floyd
+            </li>
+        </ul>
+        <ul>
+            <li>
+                The doors
+            </li>
+        </ul>
+    </section>
+    <section class="pop">
+        <h4>Pop</h4>
+        <ul>
+            <li>
+                Michael Jackson
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Madonna
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Madonna
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Britney Spears
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Bruno Mars
+            </li>
+        </ul>
+        <ul>
+            <li>
+                ABBA
+            </li>
+        </ul>
+    </section>
+    <section class="punk">
+        <h4>Punk</h4>
+        <ul>
+            <li>
+                Iggy Pop
+            </li>
+        </ul>
+        <ul>
+            <li>
+                The Clash
+            </li>
+        </ul>
+        <ul>
+            <li>
+                The Offspring
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Green Day
+            </li>
+        </ul>
+        <ul>
+            <li>
+                The Velvet Underground
+            </li>
+        </ul>
+    </section>
+    <section class="Jazz">
+        <h4>Jazz</h4>
+        <ul>
+            <li>
+                Louis Armstrong
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Billie Holiday
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Django Reinhardt
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Miles Davis
+            </li>
+        </ul>
+        <ul>
+            <li>
+                John Coltrane
+            </li>
+        </ul>
+    </section>
+    <section class="rap">
+        <h4>Rap</h4>
+        <ul>
+            <li>
+                Freeze Corleone
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Damso
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Eminem
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Tupac
+            </li>
+        </ul>
+        <ul>
+            <li>
+                SCH
+            </li>
+        </ul>
     </section>
 
 

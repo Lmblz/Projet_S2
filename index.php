@@ -157,9 +157,10 @@
                 </figure>
             </div>
         </section>
-        <button id="app">
+        <a href="homepage.php"><button id="app">
             Accéder à l'application
-        </button>
+            </button>
+        </a>
     </main>
     <footer>
         <figure id="logo_footer">

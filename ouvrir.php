@@ -32,10 +32,10 @@
     <img src="img/mock_up_decouvrir_a_propos.svg" alt="Mockup de la fenêtre Découvrir de la page à propos">
     <h2>Une application mobile conçue pour les fans de musiques </h2>
     <div class="content">
-        <a href="ouvrir.php"><button id="acceder">Accéder à l'app</button></a>
+        <a href="homepage.php"><button id="acceder">Accéder à l'app</button></a>
         <p>Save'Hit est une web application gratuite, disponible sur mobile. Une fois lancée, créez votre compte et entrez dans l'univers de la musique !</p>
         <p>Vous pouvez également créer un compte en cliquant ici :</p>
-        <a href="s_inscrire.php"><button id="creer">Créer son compte</button></a>
+        <a href="inscription_app.php"><button id="creer">Créer son compte</button></a>
     </div>
 </main>
 <footer>

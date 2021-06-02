@@ -46,9 +46,9 @@
                 </fieldset>
             </div>
             <div>
-                <a href="#"><button id="s_inscire">S'inscrire</button></a>
+                <a href="inscription_app.php"><button id="s_inscire">S'inscrire</button></a>
                 <p>Vous pouvez ouvrir l'application en cliquant ici :</p>
-                <a href="#"><button id="acceder">Accéder à l'app</button></a>
+                <a href="homepage.php"><button id="acceder">Accéder à l'app</button></a>
             </div>
         </div>
     </main>

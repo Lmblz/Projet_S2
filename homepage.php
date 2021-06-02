@@ -11,12 +11,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/style_app.css">
+    <style>
+        a button {
+            width: 100%;
+            height: 20%;
+            margin-top: 200px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <img src="img/logo_blanc.png" alt="Logo Save Hit blanc">
     </header>
-    <button class="connection">Démarrer</button>
+    <a href="inscription_app.php"><button class="connection">Démarrer</button></a>
     <span>Déjà un compte ? <a href="connection.php">Se connecter</a></span>
 
 </body>
