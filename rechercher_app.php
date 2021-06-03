@@ -5,7 +5,7 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
 
 session_start();
 
-$bdd = new PDO('mysql:host=xx1e2.myd.infomaniak.com;dbname=xx1e2_projets2', 'xx1e2_temp_1', 'aB9rBvaxvrrS');
+$bdd = new PDO('mysql:host=xx1e2.myd.infomaniak.com;dbname=xx1e2_projets2', 'xx1e2_projet_s2', 'yVKAVT!T3Pd5TX_');
 //$bdd = new PDO('mysql:host=localhost; dbname=projet_s2', 'root', 'root');
 
 $q = htmlspecialchars($_GET['q']);
@@ -15,7 +15,6 @@ if(isset($_GET['q']) AND !empty($_GET['q'])) {
     if($artists->rowCount() == 0) {
         $artists = $bdd->query('SELECT name_artist FROM artist WHERE CONCAT(name_artist, period_artist, type_artist) LIKE "%'.$q.'%" ORDER BY id_artist_artist DESC');
     }
-}
 ?>
 <!doctype html>
 <html lang="fr">
@@ -129,7 +128,8 @@ if(isset($_GET['q']) AND !empty($_GET['q'])) {
     <input type="search" name="q" placeholder="Rechercher un titre, un artiste, une époque, un album" />
     <input type="submit" value="Valider" />
 </form>
-<?php if($artists->rowCount() > 0) { ?>
+<?php
+if($artists->rowCount() > 0) { ?>
     <ul>
         <?php while($a = $artists->fetch()) { ?>
             <li>
@@ -139,7 +139,7 @@ if(isset($_GET['q']) AND !empty($_GET['q'])) {
     </ul>
 <?php } else { ?>
     <p>Aucun résultat pour: <p><?= $q ?>...
-<?php } ?>
+<?php }} ?>
 
 <footer class="nav">
     <a href="decouvrir_app.php">
